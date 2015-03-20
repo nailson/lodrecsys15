@@ -1,0 +1,16 @@
+{
+    "contents" : "\ntems_music <- read.delim(\"../../eswc2015-lod-recsys-challenge-v1.0-TRAINING/items_music.dat\", header=TRUE)\nnewArtsts = data.frame( item=substring(tems_music$X..id, 3),url=tems_music$entity)\n\nwrite.table(newArtsts, file=\"artists_url.tsp\", sep=\"\\t\", col.names=F, row.names=F)\n\nuser_data = data.frame( user=unique(training_likes_music[order(training_likes_music$V1),]$V1))\n\nuser_data$id = c(1:length(user_data$user))\n\nwrite.table(user_data, file=\"user_data.tsp\", sep=\"\\t\", col.names=F, row.names=F)\n\nmerge(tems_music, user_data, by.x=tems_music[1], by.y=user_data$user)\n",
+    "created" : 1426812597748.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3353496873",
+    "id" : "5CCB3E06",
+    "lastKnownWriteTime" : 1426822714,
+    "path" : "~/GitHub/mestrado_UFCG/LODRecSys2015/R/Artists/tratamendo_artista.R",
+    "project_path" : "tratamendo_artista.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

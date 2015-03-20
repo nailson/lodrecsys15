@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1426856170719.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "47588384",
+    "lastKnownWriteTime" : 6151758095593766911,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "user_data",
+        "contentUrl" : "content?title=user_data&file=c2cee532732d46aeb4b2a3a617f6b71b.htm",
+        "displayedObservations" : "1000",
+        "displayedVariables" : 2,
+        "totalObservations" : "52072",
+        "variables" : "2"
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

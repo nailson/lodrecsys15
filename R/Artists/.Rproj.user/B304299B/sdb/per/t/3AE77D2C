@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1426817489750.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3AE77D2C",
+    "lastKnownWriteTime" : 28429440799211521,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "training_likes_music",
+        "contentUrl" : "content?title=training_likes_music&file=2921554cef5c4d95bab73864980ce83b.htm",
+        "displayedObservations" : 1000,
+        "displayedVariables" : 2,
+        "totalObservations" : 1093851,
+        "variables" : 2
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

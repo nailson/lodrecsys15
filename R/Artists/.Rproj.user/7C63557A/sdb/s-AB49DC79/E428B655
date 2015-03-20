@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1426855028346.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E428B655",
+    "lastKnownWriteTime" : 3906925676640337920,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "tems_music",
+        "contentUrl" : "content?title=tems_music&file=41d030b02039460c8952bcbce148a32b.htm",
+        "displayedObservations" : "1000",
+        "displayedVariables" : 3,
+        "totalObservations" : "3370",
+        "variables" : "3"
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

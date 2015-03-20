@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1426812818907.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "1331F328",
+    "lastKnownWriteTime" : 28429440799211521,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "newArtsts",
+        "contentUrl" : "content?title=newArtsts&file=b1fd62795e2547e6b98c9efff68a267d.htm",
+        "displayedObservations" : "1000",
+        "displayedVariables" : 2,
+        "totalObservations" : "3370",
+        "variables" : "2"
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
