@@ -1,13 +1,13 @@
 {
-    "contents" : "\ntems_music <- read.delim(\"../../eswc2015-lod-recsys-challenge-v1.0-TRAINING/items_music.dat\", header=TRUE)\n\nMusical_artists = tems_music[tems_music$type!=\"music_genre\",]\n\nnewArtsts = data.frame( item=substring(Musical_artists$X..id, 3),url=Musical_artists$entity)\n\nnewItems = data.frame( item=substring(tems_music$X..id, 3),url=tems_music$entity)\n\nwrite.table(newArtsts, file=\"artists_url.tsp\", sep=\"\\t\", col.names=F, row.names=F)\n\nwrite.table(newItems, file=\"items_url.tsp\", sep=\"\\t\", col.names=F, row.names=F)\n\nItem_musical_genre = tems_music[tems_music$type==\"music_genre\",]\n\nItem_musical_genre = data.frame( item=substring(Item_musical_genre$X..id, 3),url=Item_musical_genre$entity)\n\nuser_data = data.frame( user=unique(training_likes_music[order(training_likes_music$V1),]$V1))\n\nuser_data$id = c(1:length(user_data$user))\n\nwrite.table(user_data, file=\"user_data.tsp\", sep=\"\\t\", col.names=F, row.names=F)\n\nmerge(training_likes_music, user_data, by.x=\"V1\", by.y=\"user\")\n",
+    "contents" : "\nitems_music <- read.delim(\"~/Documentos/Mestrado/Git/lodrecsys15/data/items_music.dat\", header=T, quote=\"\")\n\nMusical_artists = items_music[items_music$type!=\"music_genre\",]\n\nnewArtists = data.frame( item=substring(Musical_artists$X..id, 3),url=Musical_artists$entity)\n\nnewItems = data.frame( item=substring(items_music$X..id, 3),url=items_music$entity)\n\nwrite.table(newArtists, file=\"artists_url.tsp\", sep=\"\\t\", col.names=F, row.names=F, quote=F)\n\nwrite.table(newItems, file=\"items_url.tsp\", sep=\"\\t\", col.names=F, row.names=F, quote=F)\n\nItem_musical_genre = items_music[items_music$type==\"music_genre\",]\n\nItem_musical_genre = data.frame( item=substring(Item_musical_genre$X..id, 3),url=Item_musical_genre$entity)\n\nuser_data = data.frame( user=unique(training_likes_music[order(training_likes_music$V1),]$V1))\n\nuser_data$id = c(1:length(user_data$user))\n\nwrite.table(user_data, file=\"user_data.tsp\", sep=\"\\t\", col.names=F, row.names=F, quote=F)\n\nnewTraining = merge(training_likes_music, user_data, by.x=\"V1\", by.y=\"user\")\nnewTraining = data.frame( User=newTraining$id, Item=substring(newTraining$V2,3), weight=rep(1,length(newTraining$V1)) )\n\n\nwrite.table(newTraining, file=\"newTraining.tsp\", sep=\"\\t\", col.names=F, row.names=F, quote=F)\n\nwrite.table(user_data, file=\"MapUserData.tsp\", sep=\"\\t\", col.names=F, row.names=F, quote=F)\n\n",
     "created" : 1426797516461.000,
-    "dirty" : true,
+    "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2544212264",
+    "hash" : "1507264334",
     "id" : "C0FD067F",
-    "lastKnownWriteTime" : 1426853236,
-    "path" : "~/Documentos/Mestrado/Git/mestrado_UFCG/LODRecSys2015/R/Artists/tratamendo_artista.R",
+    "lastKnownWriteTime" : 1426873742,
+    "path" : "~/Documentos/Mestrado/Git/lodrecsys15/R/Artists/tratamendo_artista.R",
     "project_path" : "tratamendo_artista.R",
     "properties" : {
         "tempName" : "Untitled1"
