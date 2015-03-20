@@ -29,3 +29,21 @@ write.table(newTraining, file="newTraining.tsp", sep="\t", col.names=F, row.name
 
 write.table(user_data, file="MapUserData.tsp", sep="\t", col.names=F, row.names=F, quote=F)
 
+write.table(Item_musical_genre, file="genre_items.tsp", sep="\t", col.names=F, row.names=F, quote=F)
+
+
+artists_genre <- read.delim("~/Documentos/Mestrado/Git/lodrecsys15/R/Artists/LOD_artists_genre.tsp", header=FALSE)
+
+MapGenres = data.frame( id=c(1:length(unique(artists_genre$V2))), genre = unique(artists_genre$V2) )
+
+write.table(MapGenres, file="MapGenres.tsp", sep="\t", col.names=F, row.names=F, quote=F)
+
+newCategoryFile = merge(artists_genre, MapGenres, by.x="V2", by.y="genre")
+
+newItemGenreFile = data.frame(item=newCategoryFile$V1, genre=newCategoryFile$id)
+
+write.table(newItemGenreFile, file="newItemGenre.tsp", sep="\t", col.names=F, row.names=F, quote=F)
+
+test_set_music <- read.table("~/Documentos/Mestrado/Git/lodrecsys15/data/test_set_music.dat", quote="\"")
+
+merge(test_set_music, user_data, by.x="V1", by.y="user")

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "recommenders", "recommenders\recommenders.csproj", "{1862B00E-B6AA-492F-B0EB-FC652E358156}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1862B00E-B6AA-492F-B0EB-FC652E358156}.Debug|x86.ActiveCfg = Debug|x86
+		{1862B00E-B6AA-492F-B0EB-FC652E358156}.Debug|x86.Build.0 = Debug|x86
+		{1862B00E-B6AA-492F-B0EB-FC652E358156}.Release|x86.ActiveCfg = Release|x86
+		{1862B00E-B6AA-492F-B0EB-FC652E358156}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = recommenders\recommenders.csproj
+	EndGlobalSection
+EndGlobal
