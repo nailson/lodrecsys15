@@ -16,7 +16,7 @@ namespace recommenders
 		public static void Main (string[] args)
 		{
 			String data_dir = "../../data/";
-			int nRec = 20;
+			int nRec = 50;
 
 			executeBPRMF(nRec, data_dir);
 			executeKNN(nRec, data_dir);
@@ -129,8 +129,13 @@ namespace recommenders
 			var BPRMF_recommender = new BPRMF();
 			BPRMF_recommender.Feedback = training_data;
 
-			float[] learn_rates = new float[] { 0.5f, 0.1f, 0.01f, 0.05f };
-			uint[] num_factors = new uint[] {  10, 25, 50, 100 };
+			//float[] learn_rates = new float[] { 0.5f, 0.1f, 0.01f, 0.05f };
+
+			float[] learn_rates = new float[] { 0.01f };
+
+			//uint[] num_factors = new uint[] {  50, 100 };
+			uint[] num_factors = new uint[] {  10 };
+
 			foreach (var this_learn_rate in learn_rates)
 			{
 				foreach (var this_num_factors in num_factors)

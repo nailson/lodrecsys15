@@ -46,4 +46,9 @@ write.table(newItemGenreFile, file="newItemGenre.tsp", sep="\t", col.names=F, ro
 
 test_set_music <- read.table("~/Documentos/Mestrado/Git/lodrecsys15/data/test_set_music.dat", quote="\"")
 
-merge(test_set_music, user_data, by.x="V1", by.y="user")
+x = merge(test_set_music, items_music, by.x="V1", by.y="X..id")
+
+newTestItem = data.frame( user= rep(1,length(substring(test_set_music$V1, 3))), item=substring(test_set_music$V1, 3), weight=rep(1,length(substring(test_set_music$V1, 3))) )
+
+write.table(newTestItem, file="newTestItem.tsp", sep="\t", col.names=F, row.names=F, quote=F)
+

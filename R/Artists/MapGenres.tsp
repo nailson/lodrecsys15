@@ -3909,3 +3909,15 @@
 3909	http://dbpedia.org/resource/Indian_Fusion
 3910	http://dbpedia.org/resource/Australian_hip_hop
 3911	http://dbpedia.org/resource/Traditional_Japanese_music
+3912	http://dbpedia.org/resource/1960s_in_music
+3913	http://dbpedia.org/resource/1970s_in_music
+3914	http://dbpedia.org/resource/1980s_in_music
+3915	http://dbpedia.org/resource/1990s_in_music
+3916	http://dbpedia.org/resource/Fantasia_(music)
+3917	http://dbpedia.org/resource/Japanese_hip_hop
+3918	http://dbpedia.org/resource/Korean_court_music
+3919	http://dbpedia.org/resource/Love_song
+3920	http://dbpedia.org/resource/Oldies
+3921	http://dbpedia.org/resource/Overture
+3922	http://dbpedia.org/resource/Salsa_(dance)
+3923	http://dbpedia.org/resource/Visual_kei
