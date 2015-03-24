@@ -37,10 +37,7 @@ namespace recommenders
 
 			uint[] k_values = new uint[3] {15, 20, 30};
 
-
-
 			var training_data = ItemData.Read(data_dir + "/newTraining.tsp");
-
 
 			String recommendationString;
 

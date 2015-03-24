@@ -52,3 +52,19 @@ newTestItem = data.frame( user= rep(1,length(substring(test_set_music$V1, 3))), 
 
 write.table(newTestItem, file="newTestItem.tsp", sep="\t", col.names=F, row.names=F, quote=F)
 
+
+
+x =merge(Item_musical_genre, MapGenres, by.x="url", by.y="V2", all.x=T)
+xnotNa = x[!is.na(x$V1),]
+xNa = x[is.na(x$V1),]
+
+
+
+colnames(MapGenres) = c("item","url")
+
+x = merge(xNa, MapGenres, by.x="url", by.y="V2", all.x=T)
+
+newItemGenre2 =  rbind(newItemGenre2, data.frame(V1= x$item, V2=x$V1.y, weight=rep(1,length(x$item)) ))
+
+
+write.table(newItemGenre2, file="newItemGenre.tsp", sep="\t", col.names=F, row.names=F, quote=F)
