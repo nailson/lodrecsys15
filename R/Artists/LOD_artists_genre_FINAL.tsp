@@ -21829,8 +21829,8 @@
 5649	http://pt.dbpedia.org/resource/Post-grunge
 5690	http://pt.dbpedia.org/resource/R&B
 5690	http://pt.dbpedia.org/resource/Dance-Pop
-5690	http://pt.dbpedia.org/resource/Música_pop
-6082	http://pt.dbpedia.org/resource/Pop
+5690	http://pt.dbpedia.org/resource/Pop_music
+6082	http://pt.dbpedia.org/resource/Pop_music
 6082	http://pt.dbpedia.org/resource/Dance-Pop
 6188	http://pt.dbpedia.org/resource/Pop_music
 6188	http://pt.dbpedia.org/resource/Al_Jeel
@@ -21846,3 +21846,6 @@
 6381	http://pt.dbpedia.org/resource/Disco_music
 6381	http://pt.dbpedia.org/resource/Chanson
 6381	http://pt.dbpedia.org/resource/Música_pop
+17	http://dbpedia.org/resource/Contemporary_R&B
+17	http://pt.dbpedia.org/resource/Pop_music
+17	http://pt.dbpedia.org/resource/Soul
